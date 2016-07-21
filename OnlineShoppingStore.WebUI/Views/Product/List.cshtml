@@ -1,0 +1,16 @@
+﻿@model  IEnumerable<OnlineShoppingStore.Domain.Entities.Product>
+
+@{
+    ViewBag.Title = "Products";
+}
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        <h4>@p.Price.ToString("c")</h4>
+        @p.Descric
+
+    </div>
+}
+<h2>List</h2>
+

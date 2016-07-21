@@ -1,0 +1,10 @@
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\OnlineShoppingStore.Domain.dll.config
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\OnlineShoppingStore.Domain.dll
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\OnlineShoppingStore.Domain.pdb
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.dll
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.xml
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\obj\Debug\OnlineShoppingStore.Domain.dll
+c:\users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\obj\Debug\OnlineShoppingStore.Domain.pdb
+C:\Users\priscila\documents\visual studio 2015\Projects\OnlineShoppingStore\OnlineShoppingStore.Domain\obj\Debug\OnlineShoppingStore.Domain.csprojResolveAssemblyReference.cache
