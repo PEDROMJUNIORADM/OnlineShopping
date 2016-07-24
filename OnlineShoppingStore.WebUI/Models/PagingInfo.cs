@@ -14,8 +14,7 @@ namespace OnlineShoppingStore.WebUI.Models
         {
             get
             {
-                return (int)Math.Ceiling((decimal)TotalItems /
-                    ItemsPerPage);
+            return (int)Math.Ceiling((decimal)TotalItems / ItemsPerPage);
             }
         }
 
