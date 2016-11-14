@@ -1,5 +1,11 @@
 ﻿@model OnlineShoppingStore.WebUI.Models.CartIndexViewModel
-@{ 
+<style>
+    #cartTable td {
+        vertical-align: middle;
+    }
+</style>
+
+@{
     ViewBag.Title = "Sports Store: Your Cart";
 }
 <h2>Your Cart</h2>
@@ -25,6 +31,16 @@
                 <td class="text-right">
                     @((line.Quantity * line.Product.Price).ToString("c"))
                 </td>
+
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        @Html.Hidden("ProductId", line.Product.ProductId)
+                        @Html.HiddenFor(x => x.ReturnUrl)
+                        <input class="btn btn-sm btn-warning"
+                               type="submit" value="Remove" />
+                    }
+                </td>
             </tr>
         }
     </tbody>
@@ -33,12 +49,12 @@
             <td colspan="3" class="text-right">Total:</td>
             <td class="text-right">
                 @Model.Cart.ComputeTotalValue().ToString("c")
-        </td>
-    </tr>
-</tfoot>
+            </td>
+        </tr>
+    </tfoot>
 </table>
 <div class="text-center">
-    <a class="btn btn-primary" href="@Model.ReturnUrl">
-        Continue shopping
-    </a>
+    <a class="btn btn-primary" href="@Model.ReturnUrl">Continue shopping</a>
+    @Html.ActionLink("Checkout now", "Checkout", null,
+    new { @class = "btn btn-primary" })
 </div>
