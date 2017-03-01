@@ -15,5 +15,27 @@ namespace OnlineShoppingStore.Domain.Concrete
         {
             get { return context.Products; }
         }
+
+        public void SaveProduct(Product product)
+        {
+            if (product.ProductId==0)
+            {
+                context.Products.Add(product);
+            }
+            else
+            {
+                Product dbEntry =
+                    context.Products.Find(product.ProductId);
+                if (dbEntry!=null)
+                {
+                    dbEntry.Name = product.Name;
+                    dbEntry.Descric = product.Descric;
+                    dbEntry.Price = product.Price;
+                    dbEntry.Category = product.Category;
+                    
+                }
+            }
+            context.SaveChanges();
+        }
     }
 }
